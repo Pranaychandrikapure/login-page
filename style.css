@@ -1,0 +1,157 @@
+@import url("reset.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Fuzzy+Bubbles:wght@700&family=Poppins:wght@600&display=swap');
+
+body
+{
+    font-family: 'Poppins',sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(to right,#333399,#ff00cc);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-card-container{
+    width: 450px;
+    background: rgba(255, 255, 255, .5);
+    padding: 4rem;
+    position: relative;
+}
+
+.login-card-container::before{
+    content: '';
+    position: absolute;
+    background: rgba(255, 255, 255, .15);
+    inset: 0;
+    transform: rotate(-5deg);
+    z-index: -1;
+}
+.login-card-logo{
+    margin: 2rem;
+}
+.login-card-logo img{
+    width: 60px;
+}
+.login-card-logo,
+.login-card-header,
+.login-card-footer{
+    text-align: center;
+
+}
+
+.login-card-container a{
+    text-decoration: none;
+    color: #35339a;
+}
+.login-card-container a:hover{
+    text-decoration: underline;
+
+}
+
+.login-card-header{
+    margin-bottom: 2rem;
+}
+.login-card-header h1{
+font-size: 2rem;
+font-weight: 600;
+margin-bottom: 5rem;
+}
+.login-card-header h1 + div{
+    font-size: calc(1rem * .8);
+    opacity: .8;
+}
+.login-card-form{
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.login-card-form.form-item{
+    position: relative;
+}
+.login-card-form.form-item.form-item-icon{
+    position: absolute;
+    top:.82rem;
+    left: 1.4rem;
+    font-size: 1.3rem;
+}
+
+.login-card-form.checkbox{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.login-card-form.form-item-other{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: calc(1rem * .8);
+    margin-bottom: 5rem;
+}
+
+.login-card-footer{
+    margin-top: 1.5rem;
+    font-size: calc(1rem * .8);
+
+}
+
+.login-card-container input[type="text"],
+.login-card-container input[type="password"],
+.login-card-container input[type="email"]
+{
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, .3);
+    padding: 1rem 1.5rem;
+    padding-left: calc(1rem * 3.5);
+    border-radius: 100px;
+    width: 80%;
+    transition: background.5s;
+    margin: auto;
+}
+.form-item{
+    position: relative;
+}
+.form-item span{
+    position: absolute;
+    top:10px;
+    left:20px;
+}
+.btn {
+    border: none;
+    margin: auto;
+    -webkit-border-radius: 15;
+    -moz-border-radius: 15;
+    border-radius: 15px;
+    font-family: 'Poppins',sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    background: #000000;
+    padding: 9px 40px 15px 40px;
+    text-decoration: none;
+    cursor: pointer;
+    width: 80%;
+  }
+  
+  .btn:hover {
+    background: #373738;
+    text-decoration: none;
+  }
+  .checkbox-and-forget-password
+  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .login-card-social{
+    padding-top: 20px;
+    text-align: center;
+  }
+  .login-card-social-btn 
+  {
+    padding-top: 10px;
+    gap: 10px;
+
+  }
